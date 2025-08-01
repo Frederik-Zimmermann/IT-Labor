@@ -2,8 +2,7 @@
 body {
   margin: 20px;
   font-family: Arial, sans-serif;
-
-  background-image: url("https://github.com/Frederik-Zimmermann/IT-Labor/blob/main/brot.jpg");
+  background-image: url('../brot.jpg'); /* eine Ebene höher */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11,3 +10,19 @@ body {
 }
 
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+}
+thead {
+  background: #ddd;
+  font-weight: bold;
+}
