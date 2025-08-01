@@ -2,51 +2,153 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>3×4 mit Bildausrichtung</title>
+  <title>3×4-Tabelle Komplett</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fafafa;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-top: 20px;
     }
     th, td {
-      border: 1px solid #666;
-      padding: 10px;
-      height: 80px;              /* feste Höhe für Bilder */
-      vertical-align: middle;    /* vertikale Zentrierung */
+      border: 1px solid #444;
+      padding: 12px;
+      text-align: center;
+      vertical-align: middle;
     }
-    .img-left    { text-align: left;   }
-    .img-center  { text-align: center; }
-    .img-right   { text-align: right;  }
+    thead {
+      background: #e0e0e0;
+    }
     .img-cell img {
       width: 50px;
       height: 50px;
-      object-fit: cover;         /* Bild skaliert sauber */
+      object-fit: cover;
     }
+    .img-left   { text-align: left;   }
+    .img-center { text-align: center; }
+    .img-right  { text-align: right;  }
   </style>
 </head>
 <body>
+
+  <h1>3×4-Tabelle</h1>
   <table>
-    <tr>
-      <!-- Bild links -->
-      <td class="img-cell img-left">
-        <img src="bild1.jpg" alt="Links ausgerichtet">
-      </td>
-      <!-- Bild mittig -->
-      <td class="img-cell img-center">
-        <img src="bild2.jpg" alt="Zentriert">
-      </td>
-      <!-- Bild rechts -->
-      <td class="img-cell img-right">
-        <img src="bild3.jpg" alt="Rechts ausgerichtet">
-      </td>
-      <td>
-        <!-- Beispiel Button -->
-        <button onclick="window.open('neuerTab.html', '_blank')">
-          Neuen Tab öffnen
-        </button>
-      </td>
-    </tr>
-    <!-- Weitere Zeilen analog -->
+    <thead>
+      <tr>
+        <th>Spalte 1</th>
+        <th>Spalte 2</th>
+        <th>Spalte 3</th>
+        <th>Spalte 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Text hier</td>
+        <td class="img-cell img-left">
+          <img src="bild1.jpg" alt="Links ausgerichtet">
+        </td>
+        <td class="img-cell img-center">
+          <img src="bild2.jpg" alt="Zentriert">
+        </td>
+        <td class="img-cell img-right">
+          <img src="bild3.jpg" alt="Rechts ausgerichtet">
+        </td>
+      </tr>
+      <tr>
+        <td><a href="seite.html">Link-Text</a></td>
+        <td><button onclick="window.open('neuerTab.html','_blank')">Neuer Tab</button></td>
+        <td>Weitere Info</td>
+        <td><input type="text" placeholder="Eingabe"></td>
+      </tr>
+      <tr>
+        <td>Mehr Text</td>
+        <td>@ Zeichen</td>
+        <td><div style="width:50px;height:50px;background:#ccc;"></div></td>
+        <td>Letzte Zelle</td>
+      </tr>
+    </tbody>
   </table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>3×4-Tabelle Komplett</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fafafa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 12px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    thead {
+      background: #e0e0e0;
+    }
+    .img-cell img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+    .img-left   { text-align: left;   }
+    .img-center { text-align: center; }
+    .img-right  { text-align: right;  }
+  </style>
+</head>
+<body>
+
+  <h1>3×4-Tabelle</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Spalte 1</th>
+        <th>Spalte 2</th>
+        <th>Spalte 3</th>
+        <th>Spalte 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Text hier</td>
+        <td class="img-cell img-left">
+          <img src="bild1.jpg" alt="Links ausgerichtet">
+        </td>
+        <td class="img-cell img-center">
+          <img src="bild2.jpg" alt="Zentriert">
+        </td>
+        <td class="img-cell img-right">
+          <img src="bild3.jpg" alt="Rechts ausgerichtet">
+        </td>
+      </tr>
+      <tr>
+        <td><a href="seite.html">Link-Text</a></td>
+        <td><button onclick="window.open('neuerTab.html','_blank')">Neuer Tab</button></td>
+        <td>Weitere Info</td>
+        <td><input type="text" placeholder="Eingabe"></td>
+      </tr>
+      <tr>
+        <td>Mehr Text</td>
+        <td>@ Zeichen</td>
+        <td><div style="width:50px;height:50px;background:#ccc;"></div></td>
+        <td>Letzte Zelle</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>
