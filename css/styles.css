@@ -1,0 +1,13 @@
+
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+
+  background-image: url("https://github.com/Frederik-Zimmermann/IT-Labor/blob/main/brot.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
