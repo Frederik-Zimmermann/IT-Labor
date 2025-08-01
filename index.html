@@ -2,66 +2,33 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>4×3-Tabelle</title>
-    <style>
-      body {
-        margin: 20px;
-        font-family: Arial, sans-serif;
-      }
-
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-      }
-      th, td {
-        border: 1px solid #333;
-        padding: 12px;
-        text-align: center;
-        vertical-align: middle;
-        background: #fff;
-      }
-      thead {
-        background: #ddd;
-        font-weight: bold;
-      }
-    </style>
-  </head>
+  <title>Iframe-Demo</title>
+  <style>
+    /* Einfacher Rahmen um das Iframe */
+    iframe {
+      width: 100%;           /* volle Breite im Container */
+      height: 400px;         /* Höhe nach Bedarf anpassen */
+      border: 2px solid #333;
+      border-radius: 4px;
+    }
+    .wrapper {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+  </style>
+</head>
 <body>
-
-  <h2>4×3-Tabelle</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Spalte A</th>
-        <th>Spalte B</th>
-        <th>Spalte C</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ich mag die Versetzung</td>
-        <td><img src="https://raw.githubusercontent.com/Frederik-Zimmermann/IT-Labor/main/brot.jpg" width="20"></td>
-        <td>Zeile 1, C</td>
-      </tr>
-      <tr>
-        <td> <a href="http://google.de">Über mich</a> </td>
-        <td>Zeile 2, B</td>
-        <td>Zeile 2, C</td>
-      </tr>
-      <tr>
-        <td>Zeile 3, A</td>
-        <td>Zeile 3, B</td>
-        <td>Zeile 3, C</td>
-      </tr>
-      <tr>
-        <td>Zeile 4, A</td>
-        <td>Zeile 4, B</td>
-        <td>Zeile 4, C</td>
-      </tr>
-    </tbody>
-  </table>
-
+  <div class="wrapper">
+    <h1>Embedding mittels Iframe</h1>
+    <p>Hier lädt das Iframe die Tabelle aus <code>tabelle.html</code>:</p>
+    
+    <iframe
+      src="tabelle.html"        <!-- Pfad zur eingebetteten Datei -->
+      title="4×3 Tabelle"       <!-- für Accessibility -->
+      loading="lazy"            <!-- optimiert Performance -->
+      sandbox                  <!-- schränkt Iframe-Kontext ein; optional konfigurieren -->
+      ></iframe>
+  </div>
 </body>
 </html>
