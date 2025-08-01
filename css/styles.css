@@ -2,7 +2,7 @@
 body {
   margin: 20px;
   font-family: Arial, sans-serif;
-  background-image: url("https://raw.githubusercontent.com/Frederik-Zimmermann/IT-Labor/main/brot.jpg"); /* eine Ebene höher */
+  background-image: url("https://raw.github.com/Frederik-Zimmermann/IT-Labor/main/brot.jpg"); /* eine Ebene höher */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
