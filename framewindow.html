@@ -2,39 +2,51 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Projektstatus-Tabelle</title>
+  <title>3×4 mit Bildausrichtung</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 10px;
+      height: 80px;              /* feste Höhe für Bilder */
+      vertical-align: middle;    /* vertikale Zentrierung */
+    }
+    .img-left    { text-align: left;   }
+    .img-center  { text-align: center; }
+    .img-right   { text-align: right;  }
+    .img-cell img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;         /* Bild skaliert sauber */
+    }
+  </style>
 </head>
 <body>
-  <!-- Tabelle mit 3 Zeilen (inkl. Kopf) und 4 Spalten -->
   <table>
-    <thead>
-      <tr>
-        <th>Meilenstein</th>
-        <th>Verantwortlich</th>
-        <th>Fälligkeitsdatum</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Konzept</td>
-        <td>Team A</td>
-        <td>15.08.2025</td>
-        <td>In Arbeit</td>
-      </tr>
-      <tr>
-        <td>Implementierung</td>
-        <td>Team B</td>
-        <td>30.09.2025</td>
-        <td>Offen</td>
-      </tr>
-      <tr>
-        <td>Testphase</td>
-        <td>QA</td>
-        <td>15.10.2025</td>
-        <td>Offen</td>
-      </tr>
-    </tbody>
+    <tr>
+      <!-- Bild links -->
+      <td class="img-cell img-left">
+        <img src="bild1.jpg" alt="Links ausgerichtet">
+      </td>
+      <!-- Bild mittig -->
+      <td class="img-cell img-center">
+        <img src="bild2.jpg" alt="Zentriert">
+      </td>
+      <!-- Bild rechts -->
+      <td class="img-cell img-right">
+        <img src="bild3.jpg" alt="Rechts ausgerichtet">
+      </td>
+      <td>
+        <!-- Beispiel Button -->
+        <button onclick="window.open('neuerTab.html', '_blank')">
+          Neuen Tab öffnen
+        </button>
+      </td>
+    </tr>
+    <!-- Weitere Zeilen analog -->
   </table>
 </body>
 </html>
