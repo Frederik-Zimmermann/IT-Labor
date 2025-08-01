@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <title>4×3-Tabelle</title>
   <style>
+     body {
+      margin: 20px;
+      font-family: Arial, sans-serif;
 
+      /* Raw-URL, nicht die blob-URL! */
+      background-image: url('https://github.com/Frederik-Zimmermann/IT-Labor/blob/main/brot.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
-      background-image: url('https://github.com/Frederik-Zimmermann/IT-Labor/blob/main/brot.jpg');
     }
     table {
       width: 100%;
@@ -42,7 +51,7 @@
     <tbody>
       <tr>
         <td>Ich mag die Versetzung</td>
-        <td><img src="https://github.com/Frederik-Zimmermann/IT-Labor/blob/main/brot.jpg" width="20px"></td>
+        <td><img src="'https://github.com/Frederik-Zimmermann/IT-Labor/blob/main/brot.jpg" width="20px"></td>
         <td>Zeile 1, C</td>
       </tr>
       <tr>
